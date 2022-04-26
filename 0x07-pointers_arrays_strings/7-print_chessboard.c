@@ -1,26 +1,23 @@
-#include "main.h"
-/**
- * _strstr - Entry point
- * @haystack: input
- * @needle: input
- * Return: Always 0 (Success)
+/*
+ * File: 7-print_chessboard.c
+ * Auth: Daniel Williams
  */
-char *_strstr(char *haystack, char *needle)
+
+#include "main.h"
+
+/**
+ * print_chessboard - Prints a chessboard.
+ * @a: The chessboard to be printed.
+ */
+void print_chessboard(char (*a)[8])
 {
-	for (; *haystack != '\0'; haystack++)
+	int indx1, indx2;
+
+	for (indx1 = 0; a[indx1][7]; indx1++)
 	{
-		char *l = haystack;
-		char *p = needle;
+		for (indx2 = 0; indx2 < 8; indx2++)
+			_putchar(a[indx1][indx2]);
 
-		while (*l == *p && *p != '\0')
-		{
-			l++;
-			p++;
-		}
-
-		if (*p == '\0')
-			return (haystack);
+		_putchar('\n');
 	}
-
-	return (0);
 }
