@@ -10,8 +10,5 @@ The project contains the following files as a structure
 100-get_endianness
 101-password
 main.h -README.md
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
+
+
