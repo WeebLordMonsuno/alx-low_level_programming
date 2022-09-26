@@ -1,1 +1,1 @@
-new README
+0x1A. C - Hash tables
